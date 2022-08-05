@@ -1,5 +1,5 @@
 # Ryu-Encryption
-This repository contains the all the current versions of my 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and currently offers 3 encryption levels.
+This repository contains the all the current versions of the 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and currently offers 3 encryption levels.
 
 ## Changelog
 - **Version-0.1.0-alpha:** Tested with some Caesar Cipher Functions
