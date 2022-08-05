@@ -14,4 +14,4 @@ This repository contains the all the current versions of my 'Ryu Encryption' sof
 - **Version-1.4.0:** Finished Level 1
 - **Version-1.5.0:** Finished Level 2
 - **Version-1.6.0:** Started Level 3
-- **Version-1.7.0:** Finished Level 3 by reworking key_product.py
+- **Version-1.7.0:** Finished Level 3 by reworking `key_product.py`
