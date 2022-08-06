@@ -37,21 +37,22 @@ N.B. This is **not** the official name for this Cipher
 N.B. This is **not** the official name for this Cipher
 
 ### 1.4) User Requirements
-- Ability for the User to access the Main Screen
-- Ability for the User to access the Encryption Screen
-- Ability for the User to access the Decryption Screen
-- Inability for the User to resize any Screens
-
-- Ability for the User to Encrypt Data using Level 1
-- Ability for the User to Decrypt Data using Level 1
-- Ability for the User to Encrypt Data using Level 2
-- Ability for the User to Decrypt Data using Level 2
-- Ability for the User to Encrypt Data using Level 3
-- Ability for the User to Decrypt Data using Level 3
-
-- Ability for the User to recieve a Warning when their Key does not match the following conditions:
-  - 8 characters or over in length
-  - Contains at least 1 non-alphanumeric character
+- GUI
+  - Ability for the User to access the Main Screen
+  - Ability for the User to access the Encryption Screen
+  - Ability for the User to access the Decryption Screen
+  - Inability for the User to resize any Screens
+- Validation
+  - Ability for the User to recieve a Warning when their Key does not match the following conditions:
+    - 8 characters or over in length
+    - Contains at least 1 non-alphanumeric character
+- Algorithms
+  - Ability for the User to Encrypt Data using Level 1
+  - Ability for the User to Decrypt Data using Level 1
+  - Ability for the User to Encrypt Data using Level 2
+  - Ability for the User to Decrypt Data using Level 2
+  - Ability for the User to Encrypt Data using Level 3
+  - Ability for the User to Decrypt Data using Level 3
 
 ## 2) Current System in place
 ```python
