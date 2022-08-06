@@ -1,14 +1,25 @@
-# Ryu-Encryption
+# Ryu Encryption
 
 ## 1) Introduction
 This repository contains the all the current versions of the 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and currently offers 3 encryption levels.
 
+___
+
 ## 2) Current System in place
+```
+def import(self):
+  print(self.__init__)
+  return nL
+```
+
+___
 
 ## 3) Plan
 ### 3.1) Structured English
 ### 3.2) Pseudocode
 ### 3.3) Program Flowchart
+
+___
 
 ## 4) Code Explanation
 ### 4.1) Code
@@ -27,7 +38,11 @@ This repository contains the all the current versions of the 'Ryu Encryption' so
 - **Version-1.6.0:** Started Level 3
 - **Version-1.7.0:** Finished Level 3 by reworking `key_product.py`
 
+___
+
 ## 5) Error Testing
+
+___
 
 ## 6) Review
 ### 6.1) Feedback from other users
