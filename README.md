@@ -30,6 +30,14 @@ To learn how to create a GUI as well as full-stack development.
 #### Level 1 (Caesar Cipher)
 N.B. This is the official name for this Cipher
 
+Caesar Cipher is a type of 'Substitution Cipher' whereby each character in the plaintext is replaced by a character that is a fixed number of positions down a character set. Normally, this the character set used is the English Latin-script alphabet. My character set is below in the form of a python list called `ascii_accepted_list`; it contains the letters for the ascii values 32 `[SPACE]` up to the value 126 `~` (tilde). The user-inputed key is converted to a number between 1 and 94 by the `key_product.py` script. Although there are 95 characters in the list, this range ensures that the characters are at least shifted by 1 place. A range of 0 to 95 would allow 2/95ths of the shifts to be by 0 places, hence making the algorithm redundant. 
+
+```
+ascii_accepted_list = [chr(i) for i in range(32, 126 + 1)]
+```
+
+For more information visit [Wikipedia's](https://en.wikipedia.org/wiki/Caesar_cipher) page.
+
 #### Level 2 (Grid Cipher)
 N.B. This is **not** the official name for this Cipher
 
@@ -53,6 +61,8 @@ N.B. This is **not** the official name for this Cipher
   - Ability for the User to Decrypt Data using Level 2
   - Ability for the User to Encrypt Data using Level 3
   - Ability for the User to Decrypt Data using Level 3
+
+___
 
 ## 2) Current System in place
 ```python
