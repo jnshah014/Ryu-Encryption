@@ -44,6 +44,8 @@ For more information visit [Wikipedia's](https://en.wikipedia.org/wiki/Caesar_ci
 #### Level 3 (Cumulative Cyclic Caesar Cipher)
 *N.B. This is **not** the official name for this Cipher*
 
+This Cipher is similar to the Caesar Cipher but is more intricate and is best explained with an example. Let the `plaintext = "hello"` and the key (after processing by the `key_product.py` script) to be `key = 126798`. Then break `key` down into pairs of numbers: `12, 67, 98`. Next shift the whole of `plaintext` by the first number (`12`). Then shift the whole of `plaintext` again, apart from the first letter, by the second number (`67`). This pattern is repeated until there are no more pair of numbers, and the shift cycles back to the first number (`12`). This process repeats until the end of `plaintext`, in this case 5 times.
+
 ### 1.4) User Requirements
 - GUI
   - Ability for the User to access the Main Screen
