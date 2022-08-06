@@ -4,9 +4,10 @@
 ## 1) Introduction
 This repository contains the all the current versions of the 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and currently offers 3 encryption levels.
 
+### 1.1) Description
 My aim for this project was to create an encryption software that offered 3 different levels of security, each of which uses a different process to encrypt data (and conversely decrypt data). The strength (and computational power needed) of the algorithms increase with the level. I aimed to create a user interface using Python's `tkinter` module to allow the user to enter inputs and access outputs. Level 1 was to use a Caesar Cipher, Level 2 was to use a Grid Cipher and Level 3 was to use a Cumulative Cyclic Caesar Cipher (please see below for more information). I aim to set myself a total of 5 hours - an hour per day - to complete this project. Please see my checklist below of the subtasks I had to complete.
 
-### Subtasks
+### 1.2) Subtasks
 - Frontend GUI
   - Main Menu
   - Encryption Screen
@@ -19,14 +20,18 @@ My aim for this project was to create an encryption software that offered 3 diff
   - Level 3
   - Character Shift Function 
 
-### Level 1 (Caesar Cipher)
+### 1.3) Encryption Levels
+#### Level 1 (Caesar Cipher)
 N.B. This is the official name for this Cipher
 
-### Level 2 (Grid Cipher)
+#### Level 2 (Grid Cipher)
 N.B. This is **not** the official name for this Cipher
 
-### Level 3 (Cumulative Cyclic Caesar Cipher)
+#### Level 3 (Cumulative Cyclic Caesar Cipher)
 N.B. This is **not** the official name for this Cipher
+
+### 1.4) User Requirements
+Insert
 
 ## 2) Current System in place
 ```python
