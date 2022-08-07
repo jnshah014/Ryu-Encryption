@@ -100,8 +100,8 @@ ___
 ### 3.2) Pseudocode
 ### 3.3) Program Flowchart
 
-## 4) Code Explanation
-### 4.1) Code
+## 4) Python Scripts
+### 4.1) Code Explanation
 ### 4.2) Changelog
 - **Version-0.1.0-alpha:** Tested with some Caesar Cipher Functions
 - **Version-0.2.0-alpha:** Created Home-Screen, Trialed Encryption-Screen
