@@ -113,9 +113,19 @@ Below is my plan for the first encryption algorithm (excluding 'GUI Input / Outp
     - Add to `ciphertext` the letter that appears in the this index in the `ascii_shifted` list
 7. **OUTPUT** `ciphertext`    
 
-### 3.2) Pseudocode
+### 3.2) Pseudocode (Cambridge International A & AS Level Syntax)
+N.B. `ascii_val()` denotes a function like Python's `chr()` where a number is converted to an ASCII character. It is not part of Cambridge International's Syntax but it is necessary for this program to function.
 ```
-INSERT PSEUDOCODE HERE
+DECLARE ascii_accepted : ARRAY[1:95] OF INTEGER
+DECLARE ascii_shifted : ARRAY[1:95] OF INTEGER
+DECLARE plaintext : STRING
+DECLARE ciphertext : STRING
+DECLARE key : INTEGER
+
+FOR Index ⬅ 32 TO 126
+
+NEXT Index
+
 ```
 
 ### 3.3) Program Flowchart
