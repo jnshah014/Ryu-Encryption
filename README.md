@@ -91,11 +91,7 @@ Essentially:
 ___
 
 ## 2) Current System in place and users
-```python
-def import(self):
-  print(self.__init__)
-  return nL
-```
+There are many different encryption algorithms in place, such as MD5 to verify file integrity, SHA-256 to allow the blockchain to function and TripleDES in ATM machines. All of which are used commonly by a large amount of people. However, many use complex algorithms which take a lot of computational power and the Ryu Encryption Software poses an alternative. Although the algorithms are open source, each encryption / decryption requires **2 different inputs** allowing for security with the input text having no size restriction and the key having limited restrictions (some to ensure that the key is hard to guess). This counters rainbow tables whilst still being lightweight and rapid.
 
 ___
 
