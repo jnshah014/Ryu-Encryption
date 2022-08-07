@@ -32,7 +32,7 @@ To learn how to create a GUI as well learning full-stack development.
 
 Caesar Cipher is a type of 'Substitution Cipher' whereby each character in the plaintext is replaced by a character that is a fixed number of positions down a character set. Normally, the character set used is the English Latin-script alphabet. My character set (shown below) is in the form of a python list called `ascii_accepted_list`; it contains the letters for the ascii values 32 `[SPACE]` up to the value 126 `~` (tilde) and my program executes an error message if there are characters outside this range. The user-inputed key is converted to a number between 1 and 94 by the `key_product.py` script. Although there are 95 characters in the list, this range ensures that the characters are at least shifted by 1 place. A range of 0 to 95 would allow 2/96ths of the shifts to be by 0 places, hence making the algorithm redundant. 
 
-```
+```python
 ascii_accepted_list = [chr(i) for i in range(32, 126 + 1)]
 ```
 
@@ -40,6 +40,23 @@ For more information visit [Wikipedia's](https://en.wikipedia.org/wiki/Caesar_ci
 
 #### Level 2 (Grid Cipher)
 *N.B. This is **not** the official name for this Cipher*
+
+This Cipher is best explained with an example.
+
+The orginal character set would appear like a 2-dimensional grid like below:
+```
+[a b c]
+[d e f]
+[g h i]
+```
+The key (after processing by the `key_product.py` script) appears as a tuple of two numbers. Eg: `(2, 1)`. The first number, shifts the letters **up** by the number of places represented by the number. The second number shifts the letters **right** by the number of places represented by the number.
+```
+Initial     New
+[a b c]     [i g h]
+[d e f] --> [c a b]
+[g h i]     [f d e]
+```
+Then each letter in the plaintext becomes the letter that is now in its place in the new grid. Eg: `a --> i`, `b --> g`, `c --> h` etc.
 
 #### Level 3 (Cumulative Cyclic Caesar Cipher)
 *N.B. This is **not** the official name for this Cipher*
