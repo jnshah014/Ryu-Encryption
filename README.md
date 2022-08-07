@@ -114,6 +114,10 @@ Below is my plan for the first encryption algorithm (excluding 'GUI Input / Outp
 7. **OUTPUT** `ciphertext`    
 
 ### 3.2) Pseudocode
+```
+INSERT PSEUDOCODE HERE
+```
+
 ### 3.3) Program Flowchart
 
 ___
