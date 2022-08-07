@@ -90,12 +90,14 @@ Essentially:
 
 ___
 
-## 2) Current System in place
+## 2) Current System in place and users
 ```python
 def import(self):
   print(self.__init__)
   return nL
 ```
+
+___
 
 ## 3) Plan
 ### 3.1) Structured English
