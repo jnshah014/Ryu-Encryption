@@ -95,10 +95,28 @@ There are many different encryption algorithms in place, such as MD5 to verify f
 
 ___
 
-## 3) Plan
+## 3) System Design Plan
+Below is my plan for the first encryption algorithm (excluding 'GUI Input / Output Fields' and 'Key Processing').
+
 ### 3.1) Structured English
+1. `ascii_accepted` is a list that has the ascii values from 32 up to 126
+2. **INPUT** `plaintext` and `key`
+3. `ciphertext` is set to a blank string
+4. set `ascii_shifted` to `ascii_accepted`
+5. The following loop runs `key` times on `ascii_shifted`:
+    - Take the last of the list and store it in `_` (a temporary variable)
+    - Each element in the list should be assigned to the index of the next element in the list
+    - The first element of the list should be set as `_`
+6. The following loop runs the length of `plaintext` number of times:
+    - Set `i` as the loop counter
+    - Find the index of `i`th letter in `plaintext` in `ascii_accepted` via a Linear Search or Python's `.index()` method
+    - Add to `ciphertext` the letter that appears in the this index in the `ascii_shifted` list
+7. **OUTPUT** `ciphertext`    
+
 ### 3.2) Pseudocode
 ### 3.3) Program Flowchart
+
+___
 
 ## 4) Python Scripts
 ### 4.1) Code Explanation
