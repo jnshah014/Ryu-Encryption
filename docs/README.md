@@ -116,16 +116,48 @@ Below is my plan for the first encryption algorithm (excluding 'GUI Input / Outp
 ### 3.2) Pseudocode (Cambridge International A & AS Level Syntax)
 N.B. `ascii_val()` denotes a function like Python's `chr()` where a number is converted to an ASCII character. It is not part of Cambridge International's Syntax but it is necessary for this program to function.
 ```python
-DECLARE ascii_accepted : ARRAY[1:95] OF INTEGER
-DECLARE ascii_shifted : ARRAY[1:95] OF INTEGER
+DECLARE ascii_accepted : ARRAY[1:95] OF CHAR
+DECLARE ascii_shifted : ARRAY[1:95] OF CHAR
 DECLARE plaintext : STRING
 DECLARE ciphertext : STRING
 DECLARE key : INTEGER
 
-FOR Index ⬅ 32 TO 126
+DECLARE _ : STRING
+DECLARE index : INTEGER
+DECLARE jndex : INTEGER
 
-NEXT Index
+FOR index ⬅ 32 TO 126
+  ascii_accepted[index - 32] ⬅ ascii_val(index)
+NEXT index
 
+FOR index ⬅ 32 TO 126
+  ascii_shifted[index - 32] ⬅ ascii_val(index)
+NEXT index
+
+ciphertext = ""
+
+OUTPUT "Input plaintext: "
+INPUT plaintext
+
+OUTPUT "Input key: "
+INPUT key
+
+_ = ""
+FOR index ⬅ 1 TO key
+  _ = ascii_shifted[94]
+  FOR jndex 0 TO 93 THEN
+    ascii_shifted[jndex + 1] ⬅ ascii_shifted[jndex]
+  NEXT jndex
+  ascii_shifted[0] ⬅ _
+NEXT index
+
+FOR index ⬅ 1 TO LEN(plaintext)
+  FOR jndex ⬅ 0 TO 94
+    IF ascii_accepted[jndex] == plaintext[index] THEN
+      ciphertext ⬅ ciphertext + ascii_shifted[jndex]
+    ENDIF
+  NEXT jndex
+NEXT index
 ```
 
 ### 3.3) Program Flowchart
