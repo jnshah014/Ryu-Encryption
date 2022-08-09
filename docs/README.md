@@ -114,7 +114,7 @@ Below is my plan for the first encryption algorithm (excluding 'GUI Input / Outp
 7. **OUTPUT** `ciphertext`    
 
 ### 3.2) Pseudocode (Cambridge International A & AS Level Syntax)
-N.B. `ascii_val()` denotes a function like Python's `chr()` where a number is converted to an ASCII character. It is not part of Cambridge International's Syntax but it is necessary for this program to function.
+*N.B. `ascii_val()` denotes a function like Python's `chr()` where a number is converted to an ASCII character. It is not part of Cambridge International's Syntax but it is necessary for this program to function.*
 ```python
 DECLARE ascii_accepted : ARRAY[1:95] OF CHAR
 DECLARE ascii_shifted : ARRAY[1:95] OF CHAR
