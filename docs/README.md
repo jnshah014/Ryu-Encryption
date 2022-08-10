@@ -285,7 +285,7 @@ elif enclevelnum == 3:
     _.append([int(str(sum)[(2 * i)]), int(str(sum)[(2 * i) + 1])])
   return _
 ```
-The full code for `key_product.py` for the latest version (`version-1.7.0`) can be accessed [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/versions/version-1.7.0/subscripts/key_product.py).
+The full code for `key_product.py` for the latest version (`1.7.0`) can be accessed [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/versions/version-1.7.0/subscripts/key_product.py).
 
 ### 4.2) Changelog
 - **Version-0.1.0-alpha:** Tested with some Caesar Cipher Functions
@@ -303,7 +303,7 @@ The full code for `key_product.py` for the latest version (`version-1.7.0`) can 
 - **Version-1.7.0:** Finished Level 3 by reworking `key_product.py`
 
 ## 5) Error Testing
-Each test case should test the User Requirements outlined [here]().
+Each test case should test the User Requirements outlined [here](). The following spreadsheet shows that the current version (`1.7.0`) is without errors since all of the test cases give the expected result.
 
 ## 6) Review
 ### 6.1) Feedback from other users
