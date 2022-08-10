@@ -17,9 +17,9 @@
   - [4.2) Changelog](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#42-changelog)
 - [5) Error Testing](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#5-error-testing)
 - [6) Review](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#6-review)
-  - 6.1) Feedback from other users(https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#61-feedback-from-other-users)
-  - 6.2) Success of the project(https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#62-success-of-the-project)
-  - 6.3) Plans for the future(https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#63-plans-for-the-future)
+  - [6.1) Feedback from other users](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#61-feedback-from-other-users)
+  - [6.2) Success of the project](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#62-success-of-the-project)
+  - [6.3) Plans for the future](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#63-plans-for-the-future)
 
 ## 1) Introduction
 This repository contains the all the current versions of the 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and currently offers 3 encryption levels.
@@ -185,7 +185,7 @@ ___
 
 ## 4) Python Scripts
 ### 4.1) Code Explanation
-#### 4.1.1) Script Hierarchy
+#### Script Hierarchy
 - `main.py` - the script that is run, importing Python's `tkinter` module to render and process the GUI
 - `subscripts` - contains all the backend scripts
   - `key_product.py` - processes the user-inputted key to one that can be interpreted by the encryption algorithms
@@ -209,7 +209,7 @@ import subscripts.algorithms.level2 as level2
 import subscripts.algorithms.level3 as level3
 ```
 
-#### 4.1.2) Decryption
+#### Decryption
 To allow for decryption, the algorithm just has to work in reverse. The default tertiary input for `level2.execute()` and `level3.execute()` is `-1`. If this is changed to `1`, then the algorithm will work in reverse.
 
 ```python
@@ -226,7 +226,7 @@ ciphertext = level3.execute(plaintext, shift)
 plaintext = level3.execute(ciphertext, shift, 1)
 ```
 
-#### 4.1.3) Key Processing
+#### Key Processing
 The user-inputted key should be of 8 characters or more and include at least 1 non-alphanumeric character, eg: `!`. 
 ```python
 def validation_check(k, enc):
