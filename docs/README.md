@@ -78,17 +78,17 @@ Initial     New
 ```
 Then each letter in the plaintext becomes the letter that is now in its place in the new grid. Eg: `a --> i`, `b --> g`, `c --> h` etc.
 
-#### Level 3 (Cumulative Cyclic Caesar Cipher) - READ AGAIN AND EXPLAIN BETTTER
+#### Level 3 (Cumulative Cyclic Caesar Cipher)
 N.B. This is **not** the official name for this Cipher
 
-This Cipher is similar to the Caesar Cipher but is more intricate and is best explained with an example. Let the `plaintext = "hello"` and the key (after processing by the `key_product.py` script) to be `key = 126798`. Then break `key` down into pairs of numbers: `12, 67, 98`. Next shift the whole of `plaintext` by the first number (`12`). Then shift the whole of `plaintext` again, apart from the first letter, by the second number (`67`). This pattern is repeated until there are no more pair of numbers, and the shift cycles back to the first number (`12`). This process repeats until the end of `plaintext`, in this case 5 times.
+This Cipher is similar to the Caesar Cipher but is more intricate and is best explained with an example. Let the `plaintext = "hello"` and the key (after processing by the `key_product.py` script) to be `key = 126798`. Then break `key` down into pairs of numbers: `12, 67, 98`. Next shift the whole of `plaintext` by the first number (`12`). Then shift the whole of `plaintext` again, apart from the first letter, by the second number (`67`). Next shift the whole of `plaintext` again, apart from the first and second letters, by the third number (`98`). This pattern is repeated until there are no more pair of numbers, and the shift cycles back to the first number (`12`). This process repeats until the end of `plaintext`, in this case 5 times.
 
 Essentially:
-1. "h" is shifted by 12
-2. "e" is shifted by 12 + 67
-3. "l" is shifted by 12 + 67 + 98
-4. "l" is shifted by 12 + 67 + 98 + 12
-5. "o" is shifted by 12 + 67 + 98 + 12 + 67
+1. "h" is shifted by a total of 12
+2. "e" is shifted by a total of 12 + 67
+3. "l" is shifted by a total of 12 + 67 + 98
+4. "l" is shifted by a total of 12 + 67 + 98 + 12
+5. "o" is shifted by a total of 12 + 67 + 98 + 12 + 67
 
 ### 1.4) User Requirements
 - GUI
@@ -303,6 +303,7 @@ The full code for `key_product.py` for the latest version (`version-1.7.0`) can 
 - **Version-1.7.0:** Finished Level 3 by reworking `key_product.py`
 
 ## 5) Error Testing
+Each test case should test the User Requirements outlined [here]().
 
 ## 6) Review
 ### 6.1) Feedback from other users
