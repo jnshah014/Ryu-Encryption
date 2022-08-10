@@ -28,7 +28,7 @@ To learn how to create a GUI as well learning full-stack development.
 
 ### 1.3) Encryption Levels
 #### Level 1 (Caesar Cipher)
-*N.B. This is the official name for this Cipher*
+N.B. This is the official name for this Cipher
 
 Caesar Cipher is a type of 'Substitution Cipher' whereby each character in the plaintext is replaced by a character that is a fixed number of positions down a character set. Normally, the character set used is the English Latin-script alphabet. My character set (shown below) is in the form of a python list called `ascii_accepted_list`; it contains the letters for the ascii values 32 `[SPACE]` up to the value 126 `~` (tilde) and my program executes an error message if there are characters outside this range. The user-inputed key is converted to a number between 1 and 94 by the `key_product.py` script. Although there are 95 characters in the list, this range ensures that the characters are at least shifted by 1 place. A range of 0 to 95 would allow 2/96ths of the shifts to be by 0 places, hence making the algorithm redundant. 
 
@@ -39,7 +39,7 @@ ascii_accepted_list = [chr(i) for i in range(32, 126 + 1)]
 For more information visit [Wikipedia's](https://en.wikipedia.org/wiki/Caesar_cipher) page.
 
 #### Level 2 (Grid Cipher)
-*N.B. This is **not** the official name for this Cipher*
+N.B. This is **not** the official name for this Cipher
 
 This Cipher is best explained with an example.
 
@@ -59,7 +59,7 @@ Initial     New
 Then each letter in the plaintext becomes the letter that is now in its place in the new grid. Eg: `a --> i`, `b --> g`, `c --> h` etc.
 
 #### Level 3 (Cumulative Cyclic Caesar Cipher) - READ AGAIN AND EXPLAIN BETTTER
-*N.B. This is **not** the official name for this Cipher*
+N.B. This is **not** the official name for this Cipher
 
 This Cipher is similar to the Caesar Cipher but is more intricate and is best explained with an example. Let the `plaintext = "hello"` and the key (after processing by the `key_product.py` script) to be `key = 126798`. Then break `key` down into pairs of numbers: `12, 67, 98`. Next shift the whole of `plaintext` by the first number (`12`). Then shift the whole of `plaintext` again, apart from the first letter, by the second number (`67`). This pattern is repeated until there are no more pair of numbers, and the shift cycles back to the first number (`12`). This process repeats until the end of `plaintext`, in this case 5 times.
 
@@ -114,7 +114,7 @@ Below is my plan for the first encryption algorithm (excluding 'GUI Input / Outp
 7. **OUTPUT** `ciphertext`    
 
 ### 3.2) Pseudocode (Cambridge International A & AS Level Syntax)
-*N.B. `ascii_val()` denotes a function like Python's `chr()` where a number is converted to an ASCII character. It is not part of Cambridge International's Syntax but it is necessary for this program to function.*
+N.B. `ascii_val()` denotes a function like Python's `chr()` where a number is converted to an ASCII character. It is not part of Cambridge International's Syntax but it is necessary for this program to function.
 ```python
 DECLARE ascii_accepted : ARRAY[0:94] OF CHAR
 DECLARE ascii_shifted : ARRAY[0:94] OF CHAR
@@ -147,14 +147,18 @@ NEXT i
 
 FOR i ⬅ 1 TO LEN(plaintext)
   FOR j ⬅ 0 TO 94
-    IF ascii_accepted[j] == plaintext[i] THEN
+    IF ascii_accepted[j] == plaintext[i - 1] THEN
       ciphertext ⬅ ciphertext + ascii_shifted[j]
     ENDIF
   NEXT j
 NEXT i
+
+OUTPUT ciphertext
+
 ```
 
 ### 3.3) Program Flowchart
+N.B. The following flowchart was scripted using the **Pilot V5 Assorted Hi-techpoint pens**. Pick them up from Amazon [here](https://www.amazon.co.uk/Assorted-Colour-Hi-Tecpoint-Rollerball-Colours/dp/B00LXANW2O/ref=sr_1_6?crid=9JKPUDX1VSDU&keywords=v5%2Bhi-tecpoint&qid=1660127791&sprefix=v5%2Bhi-tecpoint%2Caps%2C62&sr=8-6).
 
 ___
 
