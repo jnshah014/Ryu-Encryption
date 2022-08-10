@@ -165,6 +165,30 @@ ___
 
 ## 4) Python Scripts
 ### 4.1) Code Explanation
+#### 4.1.1) Script Hierarchy
+- `main.py` - the script that is run, importing Python's `tkinter` module to render and process the GUI
+- `subscripts` - contains all the backend scripts
+  - `key_product.py` - processes the user-inputted key to one that can be interpreted by the encryption algorithms
+  - `verify.py` - contains a function that returns `True` if all the user data-entry requirements are met
+  - `algorithms` - contains all the encryption algorithms
+    - `level1.py`
+    - `level2.py`
+    - `level3.py`
+    - `subsfunctions.py` - contain functions that have processes that are common to all three encryption algorithms
+
+```python
+#main.py
+import tkinter as tk
+from tkinter import messagebox
+
+import subscripts.verify as verify
+import subscripts.key_product as kp
+
+import subscripts.algorithms.level1 as level1
+import subscripts.algorithms.level2 as level2
+import subscripts.algorithms.level3 as level3
+```
+
 ### 4.2) Changelog
 - **Version-0.1.0-alpha:** Tested with some Caesar Cipher Functions
 - **Version-0.2.0-alpha:** Created Home-Screen, Trialed Encryption-Screen
