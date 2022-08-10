@@ -255,6 +255,12 @@ level2_rightshift = int(str(sum)[_:])
 return ((level2_upshift % 4) + 1, (level2_rightshift % 18) + 1)
 ```
 
+For Level 3,
+```
+```
+
+The full code for `key_product.py` for the latest version (`version-1.7.0`) can be accessed [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/versions/version-1.7.0/subscripts/key_product.py).
+
 ### 4.2) Changelog
 - **Version-0.1.0-alpha:** Tested with some Caesar Cipher Functions
 - **Version-0.2.0-alpha:** Created Home-Screen, Trialed Encryption-Screen
