@@ -191,7 +191,8 @@ import subscripts.algorithms.level3 as level3
 
 #### 4.1.2) Decryption
 To allow for decryption, the algorithm just has to work in reverse. The default tertiary input for `level2.execute()` and `level3.execute()` is `-1`. If this is changed to `1`, then the algorithm will work in reverse.
-```
+
+```python
 #Level 1
 ciphertext = level1.execute(plaintext, -shift)
 plaintext = level1.execute(ciphertext, shift)
