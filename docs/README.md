@@ -301,6 +301,7 @@ The full code for `key_product.py` for the latest version (`1.7.0`) can be acces
 - **Version-1.5.0:** Finished Level 2
 - **Version-1.6.0:** Started Level 3
 - **Version-1.7.0:** Finished Level 3 by reworking `key_product.py`
+- **Version-1.8.0:** [INSERT]
 
 ## 5) Error Testing
 Each test case should test the **User Requirements** outlined [here](). The following spreadsheet shows that the current version (`1.7.0`) is without errors since all of the test cases give the expected result.
@@ -308,6 +309,12 @@ Each test case should test the **User Requirements** outlined [here](). The foll
 ### 5.1) Error Test Version-1.7.0 
 **Errors:**
 - Some Level 1 keys generated shifts which were easy to decode from eye. Eg: `plaintext=There exists a man called George` + `key=Ur4q2U^e"` = `ciphertext=4HERE_EXISTS_A_MAN_CALLED_'EORGE`
+- Level 2 shift ocassionally has the following error:
+```python
+File "Ryu-Encryption-Version-170\subscripts\key_product.py", line 27, in return_key_product
+  level2_upshift = int(str(sum)[0:_])
+TypeError: slice indices must be integers or None or have an __index__ method
+```
 
 **Solutions:**
 
