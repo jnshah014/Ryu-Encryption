@@ -189,6 +189,22 @@ import subscripts.algorithms.level2 as level2
 import subscripts.algorithms.level3 as level3
 ```
 
+#### 4.1.2) Decryption
+To allow for decryption, the algorithm just has to work in reverse. The default tertiary input for `level2.execute()` and `level3.execute()` is `-1`. If this is changed to `1`, then the algorithm will work in reverse.
+```
+#Level 1
+ciphertext = level1.execute(plaintext, -shift)
+plaintext = level1.execute(ciphertext, shift)
+
+#Level 2
+ciphertext = level2.execute(plaintext, shift)
+plaintext = level2.execute(ciphertext, shift, 1)
+
+#Level 3
+ciphertext = level3.execute(plaintext, shift)
+plaintext = level3.execute(ciphertext, shift, 1)
+```
+
 ### 4.2) Changelog
 - **Version-0.1.0-alpha:** Tested with some Caesar Cipher Functions
 - **Version-0.2.0-alpha:** Created Home-Screen, Trialed Encryption-Screen
