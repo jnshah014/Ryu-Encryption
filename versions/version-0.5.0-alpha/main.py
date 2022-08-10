@@ -5,7 +5,7 @@ import verify
 DEFAULT_FONT = "Helvetica 10"
 
 root = tk.Tk()
-root.title("Ryu Encryption (Version-0.4.0-alpha)")
+root.title("Ryu Encryption (Version-0.5.0-alpha)")
 root.geometry("500x285")
 root.resizable(False, False)
 
