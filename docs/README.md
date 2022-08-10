@@ -305,6 +305,12 @@ The full code for `key_product.py` for the latest version (`1.7.0`) can be acces
 ## 5) Error Testing
 Each test case should test the **User Requirements** outlined [here](). The following spreadsheet shows that the current version (`1.7.0`) is without errors since all of the test cases give the expected result.
 
+### 5.1) Error Test Version-1.7.0 
+**Errors:**
+- Some Level 1 keys generated shifts which were easy to decode from eye. Eg: `plaintext=There exists a man called George` + `key=Ur4q2U^e"` = `ciphertext=4HERE_EXISTS_A_MAN_CALLED_'EORGE`
+
+**Solutions:**
+
 ## 6) Review
 ### 6.1) Feedback from other users
 ### 6.2) Success of the project
