@@ -303,7 +303,7 @@ The full code for `key_product.py` for the latest version (`1.7.0`) can be acces
 - **Version-1.7.0:** Finished Level 3 by reworking `key_product.py`
 
 ## 5) Error Testing
-Each test case should test the User Requirements outlined [here](). The following spreadsheet shows that the current version (`1.7.0`) is without errors since all of the test cases give the expected result.
+Each test case should test the **User Requirements** outlined [here](). The following spreadsheet shows that the current version (`1.7.0`) is without errors since all of the test cases give the expected result.
 
 ## 6) Review
 ### 6.1) Feedback from other users
