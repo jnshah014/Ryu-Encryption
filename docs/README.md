@@ -12,11 +12,14 @@
   - [3.1) Structured English](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#31-structured-english)
   - [3.2) Pseudocode](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#32-pseudocode-cambridge-international-a--as-level-syntax)
   - [3.3) Program Flowchart](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#33-program-flowchart)
-- [4) Python Scripts]()
-  - [4.1) Code Explanation]()
-  - [4.2) Changelog]()
-- [5) Error Testing]()
-- [6) Review]()
+- [4) Python Scripts](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#4-python-scripts)
+  - [4.1) Code Explanation](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#41-code-explanation)
+  - [4.2) Changelog](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#42-changelog)
+- [5) Error Testing](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#5-error-testing)
+- [6) Review](https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#6-review)
+  - 6.1) Feedback from other users(https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#61-feedback-from-other-users)
+  - 6.2) Success of the project(https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#62-success-of-the-project)
+  - 6.3) Plans for the future(https://github.com/jnshah014/Ryu-Encryption/edit/main/docs/README.md#63-plans-for-the-future)
 
 ## 1) Introduction
 This repository contains the all the current versions of the 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and currently offers 3 encryption levels.
