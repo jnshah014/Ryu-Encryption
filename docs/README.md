@@ -206,6 +206,55 @@ ciphertext = level3.execute(plaintext, shift)
 plaintext = level3.execute(ciphertext, shift, 1)
 ```
 
+#### 4.1.3) Key Processing
+The user-inputted key should be of 8 characters or more and include at least 1 non-alphanumeric character, eg: `!`. 
+```python
+def validation_check(k, enc):
+  non_alpha_in = False
+  if enc in ["1", "2", "3"]:
+    if len(k) >= 8:
+
+      for i in range(0, len(k)):
+        if k[i] in non_alphanumeric_char:
+          non_alpha_in = True
+
+      return non_alpha_in
+        
+    else:
+      return False
+  else:
+    return False
+```
+
+The ordinals of each character in the key are summed.
+```python
+sum = 0
+  for i in range(0, len(key)):
+    sum += ord(key[i])
+```
+
+For Level 1, the key is processed as a number between 1 and 94. This is done through Python's `%` (modulus) operator which takes the remainder after division.
+```python
+if sum % 95 == 0:
+  return 1
+else:
+  return sum % 95
+```
+
+For Level 2, the Grid Cipher, the key is processed as a `( , )` tuple, where index 0 is between 1 and 3 annd index 1 is between 1 and 18. Each character then in `ascii_accepted_grid` is shifted by this vector. The first half of the digits in the ordinal sum are used to calculate index 0. The second half of the digits in the ordinal sum are used to calculate index 1.
+```python
+elif enclevelnum == 2:
+  if len(str(sum)) % 2 == 1: #odd length
+    _ = floor(len(str(sum)) / 2)
+  else:
+    _ = (len(str(sum)) / 2)
+   
+level2_upshift = int(str(sum)[0:_])
+level2_rightshift = int(str(sum)[_:])
+
+return ((level2_upshift % 4) + 1, (level2_rightshift % 18) + 1)
+```
+
 ### 4.2) Changelog
 - **Version-0.1.0-alpha:** Tested with some Caesar Cipher Functions
 - **Version-0.2.0-alpha:** Created Home-Screen, Trialed Encryption-Screen
