@@ -116,48 +116,42 @@ Below is my plan for the first encryption algorithm (excluding 'GUI Input / Outp
 ### 3.2) Pseudocode (Cambridge International A & AS Level Syntax)
 *N.B. `ascii_val()` denotes a function like Python's `chr()` where a number is converted to an ASCII character. It is not part of Cambridge International's Syntax but it is necessary for this program to function.*
 ```python
-DECLARE ascii_accepted : ARRAY[1:95] OF CHAR
-DECLARE ascii_shifted : ARRAY[1:95] OF CHAR
+DECLARE ascii_accepted : ARRAY[0:94] OF CHAR
+DECLARE ascii_shifted : ARRAY[0:94] OF CHAR
 DECLARE plaintext : STRING
 DECLARE ciphertext : STRING
 DECLARE key : INTEGER
 
 DECLARE _ : STRING
-DECLARE index : INTEGER
-DECLARE jndex : INTEGER
+DECLARE i: INTEGER
+DECLARE j : INTEGER
 
-FOR index ⬅ 32 TO 126
-  ascii_accepted[index - 32] ⬅ ascii_val(index)
-NEXT index
-
-FOR index ⬅ 32 TO 126
-  ascii_shifted[index - 32] ⬅ ascii_val(index)
-NEXT index
+FOR i ⬅ 32 TO 126
+  ascii_accepted[i - 32] ⬅ ascii_val(i)
+  ascii_shifted[i - 32] ⬅ ascii_val(i)
+NEXT i
 
 ciphertext = ""
 
-OUTPUT "Input plaintext: "
 INPUT plaintext
-
-OUTPUT "Input key: "
 INPUT key
 
 _ = ""
-FOR index ⬅ 1 TO key
+FOR i ⬅ 1 TO key
   _ = ascii_shifted[94]
-  FOR jndex 0 TO 93 THEN
-    ascii_shifted[jndex + 1] ⬅ ascii_shifted[jndex]
-  NEXT jndex
+  FOR j 0 TO 93 THEN
+    ascii_shifted[j + 1] ⬅ ascii_shifted[j]
+  NEXT j
   ascii_shifted[0] ⬅ _
-NEXT index
+NEXT i
 
-FOR index ⬅ 1 TO LEN(plaintext)
-  FOR jndex ⬅ 0 TO 94
-    IF ascii_accepted[jndex] == plaintext[index] THEN
-      ciphertext ⬅ ciphertext + ascii_shifted[jndex]
+FOR i ⬅ 1 TO LEN(plaintext)
+  FOR j ⬅ 0 TO 94
+    IF ascii_accepted[j] == plaintext[i] THEN
+      ciphertext ⬅ ciphertext + ascii_shifted[j]
     ENDIF
-  NEXT jndex
-NEXT index
+  NEXT j
+NEXT i
 ```
 
 ### 3.3) Program Flowchart
