@@ -160,6 +160,7 @@ OUTPUT ciphertext
 ### 3.3) Program Flowchart
 N.B. The following flowchart was scripted using the **Pilot V5 Assorted Hi-techpoint pens**. Pick them up from Amazon [here](https://www.amazon.co.uk/Assorted-Colour-Hi-Tecpoint-Rollerball-Colours/dp/B00LXANW2O/ref=sr_1_6?crid=9JKPUDX1VSDU&keywords=v5%2Bhi-tecpoint&qid=1660127791&sprefix=v5%2Bhi-tecpoint%2Caps%2C62&sr=8-6).
 
+![Ryu Encryption Program Flowchart by jnshah014](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/program_flowchart.jpg "Ryu Encryption Program Flowchart by jnshah014")
 ___
 
 ## 4) Python Scripts
