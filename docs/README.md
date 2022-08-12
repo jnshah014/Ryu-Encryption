@@ -339,7 +339,19 @@ ___
 
 
 ### 6.2) Success of the project
-I would say that the project has been successful since my aim has been achieved. I have 3 different levels of security and created a GUI using `tkinter` within my deadline. The 3 algorithms are also very fast:
+I would say that the project has been successful since my aim has been achieved. I have 3 different levels of security and created a GUI using `tkinter` within my deadline. The 3 algorithms are also very fast demonstrated below.
+
+**EXECUTION TIME**
+- Plaintext = `helloworld` repeated 50 times in one string
+- Key Length = `S6^&12Jnm!`
+
+|Algorithm|Execution Time (s)|
+|:---:|:---:|
+|Ryu Level 1|0.0009958744049072266|
+|Ryu Level 2|0.0029916763305664062|
+|Ryu Level 3|0.001027822494506836|
+
+Greater execution time correlates to greater algorithm complexity. Interestingly Level 2 is more complex than Level 3.
 
 ### 6.3) Plans for the future
 I plan to expand the project in then following ways:
