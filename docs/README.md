@@ -2,28 +2,8 @@
 # Ryu Encryption
 **Latest Version:** 1.8.0
 
-## Contents
-- [1) Introduction]()
-  - [1.1) Description]()
-  - [1.2) Subtasks]()
-  - [1.3) Encryption Levels]()
-  - [1.4) User Requirements]()
-- [2) Current System in place and users]()
-- [3) System Design Plan]()
-  - [3.1) Structured English]()
-  - [3.2) Pseudocode]()
-  - [3.3) Program Flowchart]()
-- [4) Python Scripts]()
-  - [4.1) Code Explanation]()
-  - [4.2) Changelog]()
-- [5) Error Testing]()
-- [6) Review]()
-  - [6.1) Feedback from other users]()
-  - [6.2) Success of the project]()
-  - [6.3) Plans for the future]()
-
 ## 1) Introduction
-This repository contains the all the current versions of the 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and currently offers 3 encryption levels.
+This repository contains the all the current versions of the 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and  offers 3 encryption levels as of `version-1.8.0`.
 
 ### 1.1) Description
 My aim for this project was to create an encryption software that offered 3 different levels of security, each of which uses a different process to encrypt data (and conversely decrypt data). The strength (and computational power needed) of the algorithms increase with the level. I aimed to create a user interface using Python's `tkinter` module to allow the user to enter inputs and access outputs. Level 1 was to use a Caesar Cipher, Level 2 was to use a Grid Cipher and Level 3 was to use a Cumulative Cyclic Caesar Cipher (please see below for more information). I aimed to set myself a total of 5 hours - an hour per day - to complete this project. Please see my checklist below of the subtasks I had to complete.
