@@ -291,7 +291,7 @@ ___
 Each test case should test the **User Requirements** outlined [here]().
 
 ### 5.1) Error Test Version-1.7.0 
-View the spreadsheet [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.7.0.xlsx).
+View the spreadsheet of testcases used [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.7.0.xlsx).
 
 **Errors:**
 - Some Level 1 keys generated shifts which were easy to decode from eye. Eg: `plaintext=There exists a man called George` + `key=Ur4q2U^e"` = `ciphertext=4HERE_EXISTS_A_MAN_CALLED_'EORGE`
@@ -328,7 +328,7 @@ elif enclevelnum == 2:
     return ((level2_upshift % 4) + 1, (level2_rightshift % 18) + 1)
 ```
 ### 5.2) Error Test Version-1.8.0 
-View the spreadsheet [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.8.0.xlsx).
+View the spreadsheet of testcases used [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.8.0.xlsx).
 
 The most up-to-date version. No errors have been found so far.
 
