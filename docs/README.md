@@ -288,9 +288,11 @@ The full code for `key_product.py` for the latest version (`1.8.0`) can be acces
 ___
 
 ## 5) Error Testing
-Each test case should test the **User Requirements** outlined [here](). The following spreadsheet shows that the current version (`1.7.0`) is without errors since all of the test cases give the expected result.
+Each test case should test the **User Requirements** outlined [here]().
 
 ### 5.1) Error Test Version-1.7.0 
+View the spreadsheet [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.7.0.xlsx).
+
 **Errors:**
 - Some Level 1 keys generated shifts which were easy to decode from eye. Eg: `plaintext=There exists a man called George` + `key=Ur4q2U^e"` = `ciphertext=4HERE_EXISTS_A_MAN_CALLED_'EORGE`
 - Level 2 shift ocassionally has the following error:
@@ -326,6 +328,8 @@ elif enclevelnum == 2:
     return ((level2_upshift % 4) + 1, (level2_rightshift % 18) + 1)
 ```
 ### 5.2) Error Test Version-1.8.0 
+View the spreadsheet [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.8.0.xlsx).
+
 The most up-to-date version. No errors have been found so far.
 
 ___
