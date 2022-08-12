@@ -1,6 +1,7 @@
 
 # Ryu Encryption
-#### Latest Version: `version-1.8.0`
+**Latest Version:** 1.8.0
+
 It is advised that the reader looks at [the code](https://github.com/jnshah014/Ryu-Encryption/tree/main/versions/version-1.8.0) before reading the documentation.
 
 ## 1) Introduction
@@ -51,7 +52,7 @@ The orginal character set would appear like a 2-dimensional grid like below:
 [d e f]
 [g h i]
 ```
-The key (after processing by the `key_product.py` script) appears as a tuple of two numbers. Eg: `(2, 1)`. The first number, shifts the letters **up** by the number of places represented by the number. The second number shifts the letters **right** by the number of places represented by the number.
+The key (after processing by the `key_product.py` script) appears as a tuple of two numbers. Eg: `(2, 1)`. The first number, shifts each letter **up** by the number of places represented by the number in the grid. The second number shifts each letter **right** by the number of places represented by the number in the grid.
 ```
 Initial     New
 [a b c]     [i g h]
@@ -163,7 +164,6 @@ OUTPUT ciphertext
 N.B. The following flowchart was scripted using the **Pilot V5 Assorted Hi-techpoint pens**. Pick them up from Amazon [here](https://www.amazon.co.uk/Assorted-Colour-Hi-Tecpoint-Rollerball-Colours/dp/B00LXANW2O/ref=sr_1_6?crid=9JKPUDX1VSDU&keywords=v5%2Bhi-tecpoint&qid=1660127791&sprefix=v5%2Bhi-tecpoint%2Caps%2C62&sr=8-6).
 
 ![Ryu Encryption Program Flowchart by jnshah014](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/program_flowchart.jpg "Ryu Encryption Program Flowchart by jnshah014")
-___
 
 ## 4) Python Scripts
 ### 4.1) Code Explanation
@@ -283,7 +283,9 @@ The full code for `key_product.py` for the latest version (`1.7.0`) can be acces
 - **Version-1.5.0:** Finished Level 2
 - **Version-1.6.0:** Started Level 3
 - **Version-1.7.0:** Finished Level 3 by reworking `key_product.py`
-- **Version-1.8.0:** [INSERT]
+- **Version-1.8.0:** Bug Fixes for Levels 1 and 2
+
+___
 
 ## 5) Error Testing
 Each test case should test the **User Requirements** outlined [here](). The following spreadsheet shows that the current version (`1.7.0`) is without errors since all of the test cases give the expected result.
@@ -325,6 +327,8 @@ elif enclevelnum == 2:
 ```
 ### 5.2) Error Test Version-1.8.0 
 The most up-to-date version. No errors have been found so far.
+
+___
 
 ## 6) Review
 ### 6.1) Feedback from other users
