@@ -288,7 +288,7 @@ The full code for `key_product.py` for the latest version (`1.8.0`) can be acces
 ___
 
 ## 5) Error Testing
-Each test case should test the **User Requirements** outlined [here]().
+Each test case should test the **User Requirements** outlined [here](). If the code fails to meet the requirements then another version of the code is scripted which better meets the requirements.
 
 ### 5.1) Error Test Version-1.7.0 
 View the spreadsheet of testcases used [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.7.0.xlsx).
