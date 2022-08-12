@@ -317,6 +317,32 @@ TypeError: slice indices must be integers or None or have an __index__ method
 ```
 
 **Solutions:**
+- A shift of 32 or of 63 converted Uppercase into Lowecase characters or Vice-Versa so the following code was implemented to combat this.
+```python
+if sum % 95 == 0:
+  return 1
+elif sum % 95 == 32:
+  return 33
+elif sum % 95 == 63:
+  return 64
+else:
+  return sum % 95
+```
+- Changed the code slightly:
+```python
+elif enclevelnum == 2:
+  #if len(str(sum)) % 2 == 1: #odd length
+  _ = floor(len(str(sum)) / 2)
+    #else:
+      #_ = (len(str(sum)) / 2)
+    
+    level2_upshift = int(str(sum)[0:_])
+    level2_rightshift = int(str(sum)[_:])
+
+    return ((level2_upshift % 4) + 1, (level2_rightshift % 18) + 1)
+```
+### 5.2) Error Test Version-1.8.0 
+The most up-to-date version. No errors have been found so far.
 
 ## 6) Review
 ### 6.1) Feedback from other users
