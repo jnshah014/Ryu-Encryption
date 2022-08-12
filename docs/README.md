@@ -1,5 +1,6 @@
 
 # Ryu Encryption
+**Latest Version:** 1.8.0
 
 ## Contents
 - [1) Introduction]()
