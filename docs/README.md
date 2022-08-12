@@ -235,7 +235,7 @@ sum = 0
     sum += ord(key[i])
 ```
 
-For Level 1, the key is processed as a number between 1 and 94. This is done through Python's `%` (modulus) operator which takes the remainder after division.
+For Level 1, the key is processed as a number between 1 and 94. This is done through Python's `%` (modulus) operator which takes the remainder after division (code below is the simplified version for `version-1.7.0`).
 ```python
 if sum % 95 == 0:
   return 1
@@ -257,7 +257,7 @@ level2_rightshift = int(str(sum)[_:])
 return ((level2_upshift % 4) + 1, (level2_rightshift % 18) + 1)
 ```
 
-For Level 3, the key is processed as a `[[], [], [] ...]` group of lists within a list. The first two digits of the ordinal sum go inside the first list, the second two digits go inside the second list, the third two digits go inside the third list and so on. Note if a the ordinal sum had an odd number of digits - eg: `342` - it would be converted to a nunber whereby the first digits are repeated - eg: `342342` - to then be processed further.
+For Level 3, the key is processed as a `[[], [], [] ...]` group of lists within a list. The first two digits of the ordinal sum go inside the first list, the second two digits go inside the second list, the third two digits go inside the third list and so on. Note if a the ordinal sum had an odd number of digits - eg: `342` - it would be converted to a number whereby the first digits are repeated - eg: `342342` - to then be processed further.
 ```python
 elif enclevelnum == 3:
   _ = []
@@ -267,7 +267,7 @@ elif enclevelnum == 3:
     _.append([int(str(sum)[(2 * i)]), int(str(sum)[(2 * i) + 1])])
   return _
 ```
-The full code for `key_product.py` for the latest version (`1.7.0`) can be accessed [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/versions/version-1.7.0/subscripts/key_product.py).
+The full code for `key_product.py` for the latest version (`1.8.0`) can be accessed [here](https://github.com/jnshah014/Ryu-Encryption/tree/main/versions/version-1.8.0).
 
 ### 4.2) Changelog
 - **Version-0.1.0-alpha:** Tested with some Caesar Cipher Functions
