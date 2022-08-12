@@ -336,5 +336,15 @@ ___
 
 ## 6) Review
 ### 6.1) Feedback from other users
+
+
 ### 6.2) Success of the project
+I would say that the project has been successful since my aim has been achieved. I have 3 different levels of security and created a GUI using `tkinter` within my deadline. The 3 algorithms are also very fast:
+
 ### 6.3) Plans for the future
+I plan to expand the project in then following ways:
+- Allow text-files to be inputted to be encrypted / decrypted
+- Create a more user-friendly and modern GUI
+- To have the user interface to be accessed by a frontend website and have multiple backend instances running on a server 
+- To add more encryption algorithms
+
