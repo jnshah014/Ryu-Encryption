@@ -8,13 +8,13 @@ It is advised that the reader looks at [the code](https://github.com/jnshah014/R
 This repository contains the all the current versions of the 'Ryu Encryption' software. 'Ryu Encryption' is a lightweight tool to encrypt small amounts of data and currently offers 3 encryption levels.
 
 ### 1.1) Description
-My aim for this project was to create an encryption software that offered 3 different levels of security, each of were to use a different process to encrypt data (and conversely decrypt data). The strength (and computational power needed) of the algorithms increase with the level. I aimed to create a user interface using Python's `tkinter` module to allow the user to enter inputs and access outputs. Level 1 was to use a Caesar Cipher, Level 2 was to use a Grid Cipher and Level 3 was to use a Cumulative Cyclic Caesar Cipher (please see below for more information). I aimed to set myself a total of 5 hours - an hour per day - to complete this project. Please see my checklist below of the subtasks I had to complete.
+My aim for this project was to create an encryption software that offered 3 different levels of security, each of which to use a different process to encrypt data (and conversely decrypt data). The strength (and computational power needed) of the algorithms increase with the level. I aimed to create a user interface using Python's `tkinter` module to allow the user to enter inputs and access outputs. Level 1 was to use a Caesar Cipher, Level 2 was to use a Grid Cipher and Level 3 was to use a Cumulative Cyclic Caesar Cipher (please see below for more information). Please see my checklist below of the subtasks I had to complete.
 
 #### User-based Objective
 To provide a lightweight and fast tool to encrypt small amounts of data.
 
 #### Personal Objective
-To learn how to create a GUI as well as full-stack development.
+To learn how to create a GUI as well as develop a full-stack project.
 
 ### 1.2) Subtasks
 - Frontend GUI
@@ -64,7 +64,7 @@ Then each letter in the plaintext becomes the letter that is now in its place in
 #### Level 3 (Cumulative Cyclic Caesar Cipher)
 N.B. This is **not** the official name for this Cipher
 
-This Cipher is similar to the Caesar Cipher but is more intricate and is best explained with an example. Let the `plaintext = "hello"` and the key (after processing by the `key_product.py` script) to be `key = 126798`. Then break `key` down into pairs of numbers: `12, 67, 98`. Next shift the whole of `plaintext` by the first number (`12`). Then shift the whole of `plaintext` again, apart from the first letter, by the second number (`67`). Next shift the whole of `plaintext` again, apart from the first and second letters, by the third number (`98`). This pattern is repeated until there are no more pair of numbers, and the shift cycles back to the first number (`12`). This process repeats until the end of `plaintext`, in this case 5 times.
+This Cipher is similar to the Caesar Cipher but is more intricate and is best explained with an example. Let the `plaintext = "hello"` and the key (after processing by the `key_product.py` script) to be `key = 126798`. *N.B. This script converts the user inputted key into one that can be interpretted by the encryption algorithms.* Then break `key` down into pairs of numbers: `12, 67, 98`. Next shift the whole of `plaintext` by the first number (`12`). Then shift the whole of `plaintext` again, apart from the first letter, by the second number (`67`). Next shift the whole of `plaintext` again, apart from the first and second letters, by the third number (`98`). This pattern is repeated until there are no more pair of numbers, and the shift cycles back to the first number (`12`). This process repeats until the end of `plaintext`, in this case 5 times.
 
 Essentially:
 1. "h" is shifted by a total of 12
@@ -80,7 +80,7 @@ Essentially:
   - Ability for the User to access the Decryption Screen
   - Inability for the User to resize any Screens
 - Validation
-  - Ability for the User to recieve a Warning when their Key does not match the following conditions:
+  - Ability for the User to receive a Warning when their Key does not match the following conditions:
     - 8 characters or over in length
     - Contains at least 1 non-alphanumeric character
 - Algorithms
@@ -94,7 +94,7 @@ Essentially:
 ___
 
 ## 2) Current System in place and users
-There are many different encryption algorithms in place, such as MD5 to verify file integrity, SHA-256 to allow the blockchain to function and TripleDES in ATM machines. All of which are used commonly by a large amount of people. However, many use complex algorithms which take a lot of computational power and the Ryu Encryption Software poses an alternative. Although the algorithms are open source, each encryption / decryption requires **2 different inputs** allowing for security with the input text having no size restriction and the key having limited restrictions (some to ensure that the key is hard to guess). This counters rainbow tables whilst still being lightweight and rapid.
+There are many different encryption algorithms in place, such as MD5 to verify file integrity, SHA-256 to allow the blockchain to function and TripleDES in ATM machines, which are used commonly by a large amount of people. However, many use complex algorithms which take a lot of computational power and the Ryu Encryption Software poses an alternative. Although the algorithms are open source, each encryption / decryption requires **2 different inputs** allowing for security with the input text having no size restriction and the key having limited restrictions (some to ensure that the key is hard to guess). This counters rainbow tables whilst still being lightweight and rapid.
 
 ___
 
@@ -288,7 +288,10 @@ The full code for `key_product.py` for the latest version (`1.8.0`) can be acces
 ___
 
 ## 5) Error Testing
-Each test case should test the **User Requirements** outlined [here](). If the code fails to meet the requirements then another version of the code is scripted which better meets the requirements.
+Each test case should test the **User Requirements** outlined [here](). If the code fails to meet the requirements (through a failed test case) then another version of the code is scripted which will correct the bug identified in a failed test case.
+
+### 5.1) Testing Round Summary Table
+
 
 ### 5.1) Error Test Version-1.7.0 
 View the spreadsheet of testcases used [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.7.0.xlsx).
@@ -355,7 +358,7 @@ Greater execution time correlates to greater algorithm complexity. Interestingly
 
 ### 6.3) Plans for the future
 I plan to expand the project in then following ways:
-- Allow text-files to be inputted to be encrypted / decrypted
+- Allow text-files to be uploaded to be encrypted / decrypted
 - Create a more user-friendly and modern GUI
 - To have the user interface to be accessed by a frontend website and have multiple backend instances running on a server 
 - To add more encryption algorithms
