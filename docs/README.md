@@ -291,22 +291,28 @@ ___
 Each test case should test the **User Requirements** outlined [here](). If the code fails to meet the requirements (through a failed test case) then another version of the code is scripted which will correct the bug identified in a failed test case.
 
 ### 5.1) Testing Round Summary Table
+|Testing Round|Test Version|Passed Tests|Total Tests|Pass Rate (%)|
+|:---:|:---:|:---:|:---:|:---:|
+|1|Version-1.7.0|24|26|92.3|
+|2|Version-1.8.0|26|26|100.0|
 
+### 5.2) Error Details
+I will describe some of the errors identified and how they were corrected via a bug fix.
 
-### 5.1) Error Test Version-1.7.0 
+#### Version-1.7.0
 View the spreadsheet of testcases used [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.7.0.xlsx).
 
-**Errors:**
-- Some Level 1 keys generated shifts which were easy to decode from eye. Eg: `plaintext=There exists a man called George` + `key=Ur4q2U^e"` = `ciphertext=4HERE_EXISTS_A_MAN_CALLED_'EORGE`
-- Level 2 shift ocassionally has the following error:
+**Errors Details:**
+1. Some Level 1 keys generated shifts which were easy to decode from eye. Eg: `plaintext=There exists a man called George` + `key=Ur4q2U^e"` = `ciphertext=4HERE_EXISTS_A_MAN_CALLED_'EORGE`
+2. Level 2 shift ocassionally has the following error:
 ```python
 File "Ryu-Encryption-Version-170\subscripts\key_product.py", line 27, in return_key_product
   level2_upshift = int(str(sum)[0:_])
 TypeError: slice indices must be integers or None or have an __index__ method
 ```
 
-**Solutions:**
-- A shift of 32 or of 63 converted Uppercase into Lowecase characters or Vice-Versa so the following code was implemented to combat this.
+**Bug Fix Details:**
+1. A shift of 32 or of 63 converted Uppercase into Lowecase characters or Vice-Versa so the following code was implemented to combat this.
 ```python
 if sum % 95 == 0:
   return 1
@@ -317,7 +323,7 @@ elif sum % 95 == 63:
 else:
   return sum % 95
 ```
-- Changed the code slightly:
+2. Changed the code slightly to allow the `floor()` function to always activate.
 ```python
 elif enclevelnum == 2:
   #if len(str(sum)) % 2 == 1: #odd length
@@ -330,7 +336,8 @@ elif enclevelnum == 2:
 
     return ((level2_upshift % 4) + 1, (level2_rightshift % 18) + 1)
 ```
-### 5.2) Error Test Version-1.8.0 
+
+#### Version-1.8.0
 View the spreadsheet of testcases used [here](https://github.com/jnshah014/Ryu-Encryption/blob/main/docs/error_testing/error_test_log-version-1.8.0.xlsx).
 
 The most up-to-date version. No errors have been found so far.
@@ -344,7 +351,7 @@ ___
 ### 6.2) Success of the project
 I would say that the project has been successful since my aim has been achieved. I have 3 different levels of security and created a GUI using `tkinter` within my deadline. The 3 algorithms are also very fast demonstrated below.
 
-**EXECUTION TIME**
+**Execution Time**
 - Plaintext = `helloworld` repeated 50 times in one string
 - Key Length = `S6^&12Jnm!`
 
