@@ -346,7 +346,7 @@ ___
 
 ## 6) Review
 ### 6.1) Feedback from other users
-
+*[insert review here]*
 
 ### 6.2) Success of the project
 I would say that the project has been successful since my aim has been achieved. I have 3 different levels of security and created a GUI using `tkinter` within my deadline. The 3 algorithms are also very fast demonstrated below.
