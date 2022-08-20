@@ -351,8 +351,7 @@ ___
 
 The code is fairly well written, mostly following conventions and with clear logic. Variables and functions are clearly named, albeit sometimes slightly too long, which makes the code somewhat cluttered – I would suggest contracting keywords such as ENCRYPT to en. The only slight syntactical issues are capitalised variables (only constants should be), and inconsistent use of line breaks. The files are well-structured and organised, although splitting each encryption level into a separate file may cause impracticalities if further levels are implemented; combining the functions into a single file, or even better, designing a class, would improve efficiency.
 
-As a future challenge, I think you could try implementing encryption and decryption of an entire file, such as a .txt document or a .json data file!" 
-
+As a future challenge, I think you could try implementing encryption and decryption of an entire file, such as a .txt document or a .json data file!" - Sup2point0
 
 ### 6.2) Success of the project
 I would say that the project has been successful since my aim has been achieved. I have 3 different levels of security and created a GUI using `tkinter` within my deadline. The 3 algorithms are also very fast demonstrated below.
