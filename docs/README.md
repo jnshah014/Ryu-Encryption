@@ -347,11 +347,11 @@ ___
 ## 6) Review
 ### 6.1) Feedback from other users
 #### Sup2point0
-From a functional perspective, the program is quick and simple, which suits its use as a convenient tool. Speed is excellent as expected, and there are no apparent bugs. The interface is rather lacking in some aspects, in particular descriptions for features, and specific details of what should be entered – for instance, there is no guidance on what should constitute an encryption key. Radio buttons or a dropdown, which would be more intuitive, could be implemented for selecting encryption level, and error messages could also be more specific to help the user understand which requirement they haven’t filled.
+"From a functional perspective, the program is quick and simple, which suits its use as a convenient tool. Speed is excellent as expected, and there are no apparent bugs. The interface is rather lacking in some aspects, in particular descriptions for features, and specific details of what should be entered – for instance, there is no guidance on what should constitute an encryption key. Radio buttons or a dropdown, which would be more intuitive, could be implemented for selecting encryption level, and error messages could also be more specific to help the user understand which requirement they haven’t filled.
 
 The code is fairly well written, mostly following conventions and with clear logic. Variables and functions are clearly named, albeit sometimes slightly too long, which makes the code somewhat cluttered – I would suggest contracting keywords such as ENCRYPT to en. The only slight syntactical issues are capitalised variables (only constants should be), and inconsistent use of line breaks. The files are well-structured and organised, although splitting each encryption level into a separate file may cause impracticalities if further levels are implemented; combining the functions into a single file, or even better, designing a class, would improve efficiency.
 
-As a future challenge, I think you could try implementing encryption and decryption of an entire file, such as a .txt document or a .json data file! 
+As a future challenge, I think you could try implementing encryption and decryption of an entire file, such as a .txt document or a .json data file!" 
 
 
 ### 6.2) Success of the project
