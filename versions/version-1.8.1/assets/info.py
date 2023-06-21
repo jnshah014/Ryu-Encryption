@@ -1,0 +1,9 @@
+INFO = """🎉✨ Welcome to Ryu Encryption ✨🎉
+
+This is a lightweight tool which enables you to encrypt small amounts of data. Currently in version 1.9.0 we offer 3 different encryption levels. The first level is a simple Caeser Cipher, the second level is a more complex Grid Cipher, and the third level is a Cumulative Cyclic Caesar Cipher. Please note that each level increases in complexity and processing power required. To use the tool, just input your plaintext and a key (used jointly to encrypt the file) and then press the button. Our system will process the inputs and output a corresponding ciphertext. Use the radio buttons to choose between encryption vs decryption and the different levels of complexity.
+
+There are many different encryption algorithms in place, such as MD5 to verify file integrity, SHA-256 to allow the blockchain to function and TripleDES in ATM machines, which are used commonly by a large amount of people. However, many use complex algorithms which take a lot of computational power and the Ryu Encryption Software poses an alternative. Although the algorithms are open source, each encryption / decryption requires 2 different inputs allowing for security with the input text having no size restriction and the key having limited restrictions (some to ensure that the key is hard to guess). This counters rainbow tables whilst still being lightweight and rapid.
+
+In the future, we hope to expand this project by allowing text-files to be uploaded to be encrypted and decrypted. We also may host this tool on a website so that it doesn't need to be downloaded in order to be used.
+
+For more information please visit the GitHub Repository via this link: https://github.com/jnshah014/Ryu-Encryption"""
